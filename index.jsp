@@ -1,3 +1,0 @@
-<a href="http://www.google.com/">
-   <button>Visit Google</button>
-</a>
