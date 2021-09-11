@@ -1,21 +1,15 @@
-<%@ page language="java"%>
-<%@ page import="java.lang.*"%>
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+    pageEncoding="US-ASCII"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>First JSP</title>
+</head>
+<%@ page import="java.util.Date" %>
 <body>
-<H1><center>Result for <%=request.getParameter("a1")%></center></H1>
-<%
-int i=Integer.parseInt(request.getParameter("t1"));
-int j=Integer.parseInt(request.getParameter("t2"));
-int k=0;
-String str=request.getParameter("a1");
+<h3>Hi Pankaj</h3><br>
+<strong>Current Time is</strong>: <%=new Date() %>
 
-if(str.equals("add"))
-  k=i+j;
-if(str.equals("mul"))
-  k=i*j;
-if(str.equals("div"))
-  k=i/j;
-%>
-Result is <%=k%>
 </body>
 </html>
